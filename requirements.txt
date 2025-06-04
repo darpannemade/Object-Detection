@@ -1,0 +1,7 @@
+streamlit
+opencv-python-headless
+ultralytics
+pandas
+numpy
+pygame
+git+https://github.com/Megvii-BaseDetection/YOLOX.git
