@@ -1,7 +1,10 @@
-streamlit
+numpy
 opencv-python-headless
 ultralytics
+torch
+torchvision
 pandas
-numpy
 pygame
+matplotlib
+streamlit
 git+https://github.com/Megvii-BaseDetection/YOLOX.git
