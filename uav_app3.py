@@ -13,6 +13,15 @@ from collections import defaultdict
 import time
 import pygame
 import io
+import os
+import subprocess
+
+# Install YOLOX only if not already installed
+try:
+    from yolox.tracker.byte_tracker import BYTETracker
+except ModuleNotFoundError:
+    subprocess.run(["pip", "install", "git+https://github.com/Megvii-BaseDetection/YOLOX.git"], check=True)
+    from yolox.tracker.byte_tracker import BYTETracker
 
 # Initialize audio alert
 pygame.mixer.init()
