@@ -1,9 +1,5 @@
-numpy
-opencv-python-headless
-ultralytics
-torch==2.2.2
-torchvision==0.17.2
-pandas
-pygame
-matplotlib
 streamlit
+torch==1.13.1
+torchvision
+opencv-python-headless
+git+https://github.com/Megvii-BaseDetection/YOLOX.git
