@@ -7,6 +7,7 @@ import tempfile
 import os
 import numpy as np
 import pandas as pd
+import torch
 from yolox.tracker.byte_tracker import BYTETracker
 from argparse import Namespace
 from collections import defaultdict
@@ -16,12 +17,6 @@ import io
 import os
 import subprocess
 
-# Install YOLOX only if not already installed
-try:
-    from yolox.tracker.byte_tracker import BYTETracker
-except ModuleNotFoundError:
-    subprocess.run(["pip", "install", "git+https://github.com/Megvii-BaseDetection/YOLOX.git"], check=True)
-    from yolox.tracker.byte_tracker import BYTETracker
 
 # Initialize audio alert
 pygame.mixer.init()
