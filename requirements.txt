@@ -1,10 +1,18 @@
-numpy
-opencv-python-headless
+# ---- CPU Torch wheels (REQUIRED for Render)
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+# ---- Core AI stack
+torch==2.2.2
+torchvision==0.17.2
 ultralytics
-torch==1.13.1
-torchvision
+numpy
 pandas
-pygame
+
+# ---- CV + UI
+opencv-python-headless
 matplotlib
 streamlit
+pygame
+
+# ---- YOLOX (must be LAST)
 git+https://github.com/Megvii-BaseDetection/YOLOX.git
